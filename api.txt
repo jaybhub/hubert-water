@@ -1,0 +1,43 @@
+// Create new document(entry) - POST
+// Need way to keep track of entries and assign unique ID
+var deliveryOne = new Delivery({
+  entryDate: new Date(),
+  date: '2018-12-25',
+  customerName: 'Santa Clause',
+  loads: 12,
+  gross: 1200,
+  waterCost: 500,
+  driverCost: 500,
+  driver: 'RAH',
+  saleType: 'Cash',
+  checkNumber: 0,
+  cash: 1200
+});
+deliveryOne.save(function (err) {
+  if (err) return handleError(err);
+});
+console.log(deliveryOne.customerName); // 'Santa Clause'
+
+
+// Update document(entry) - PUT
+Delivery.updateOne({ condition:any}, function (err, res) {
+
+});
+
+
+// Delete document(entry) - DELETE
+Delivery.deleteOne({ condition:any }, function (err) {
+  if (err) return handleError(err);
+})
+
+// Return all documents
+Delivery.find(function (err, customers) {
+  if (err) return console.error(err);
+  console.log(customers);
+})
+
+// Return all documents with the given condition
+Delivery.find({ name: /^San/ }, callback);
+
+// Return one document with the given condition
+Delivery.findOne({ name: /^San/ }, callback);
