@@ -1,33 +1,111 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Nosifer|Noto+Sans');
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  text-align: left;
+  min-width: 900px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgb(4, 67, 161);
+  /* min-height: 5vh; */
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  font-family: 'Nosifer', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(189, 238, 250);
 }
 
-.App-link {
-  color: #61dafb;
+.App-logo-container {
+  width: 25vw;
+  justify-content: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-logo {
+  /* height: 20vmin; */
+  padding-top: 10px;
+  padding-left: 30px;
+  pointer-events: none;
+  height: 10vh;
+}
+
+.App-title-container {
+  width: 50vw;
+  text-align: center;
+}
+
+.App-title {
+  margin: 0px;
+}
+
+h3 {
+  color: rgb(4, 67, 161);
+  margin-top: 8px;
+}
+
+.Quick-access-bar-container {
+  justify-content: center;
+  text-align: center;
+}
+
+.Delivery-truck-container {
+  display: flex;
+  justify-content: left;
+  margin: 10px;
+}
+
+.Delivery-container {
+  width: 60vw;
+  min-width: 600px;
+  justify-content: center;
+  text-align: center;
+  border-right-style: dashed;
+  border-right-width: 1px;
+  border-right-color: rgb(164, 200, 216);
+}
+
+.Truck-container {
+  width: 40vw;
+  min-width: 360px;
+  justify-content: center;
+  text-align: center;
+}
+
+.total-search-container {
+  display: flex;
+  justify-content: center;
+  border-style: groove;
+  border-color: rgb(164, 200, 216);
+  border-width: 4px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.running-total-container {
+
+  width: 60vw;
+  min-width: 600px;
+  justify-content: center;
+  text-align: center;
+}
+
+.search-bar-container {
+  width: 40vw;
+  min-width: 360px;
+  justify-content: lef;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.recent-entries-container {
+  justify-content: center;
+  text-align: center;
+  border-style: groove;
+  border-color: rgb(164, 200, 216);
+  border-width: 4px;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 0px 10px 10px 10px;
 }
