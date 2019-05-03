@@ -1,0 +1,52 @@
+.quick-access-button-row {
+    padding: 20px 10px 0px 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quick-access-button-row button {
+    background-color: rgb(73, 219, 245);
+    width: 10em;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(4, 67, 161);
+}
+
+.delivery-form-container {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.delivery-first-row {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+.delivery-second-row {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+.delivery-third-row {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+.delivery-button-row {
+    display: flex;
+    justify-content: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* padding-left: 26em; */
+  }
+
+  .delivery-button-row button {
+      margin-left: 20px;
+      width: 8em;
+  }
