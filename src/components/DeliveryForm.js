@@ -56,7 +56,7 @@ class DeliveryForm extends Component {
     let currentEntry = this.state.newEntry;
     console.log("Submitted: " + JSON.stringify(currentEntry));
     
-    axios.post('http://localhost:8888/deliveries/add', currentEntry)
+    axios.post('https://hubert-water.herokuapp.com/deliveries/add', currentEntry)
             .then(res => console.log(res.data));
 
     alert('Record submitted!');

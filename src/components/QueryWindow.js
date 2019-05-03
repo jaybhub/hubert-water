@@ -46,7 +46,7 @@ class QueryWindow extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8888/deliveries/')
+    axios.get('https://hubert-water.herokuapp.com/deliveries/')
       .then(response => {
         this.setState({ newEntry: response.data });
       })

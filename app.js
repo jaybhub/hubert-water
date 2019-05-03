@@ -4,13 +4,13 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const PORT = 8888;
+const Port = 8888;
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://127.0.0.1:27017/deliveries', { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || process.env.MONGOLAB_URI || 'mongodb://127.0.0.1:27017/deliveries', { useNewUrlParser: true });
 const connection = mongoose.connection;
 
 connection.once('open', function() {
@@ -21,8 +21,8 @@ app.get('/ping', (req, res) => {
    res.send('pong')
 })
 
-app.listen(PORT, function() {
-    console.log("Server is running on Port: ", (PORT));
+app.listen(process.env.PORT || Port, function() {
+    console.log("Server is running on Port: ", (process.env.PORT || Port));
 });
 
 const deliveryRoutes = express.Router();
